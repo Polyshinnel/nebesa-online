@@ -3480,3 +3480,42 @@ body{
         }
     }
 }
+
+.confidencial-block{
+    margin-top: 20px;
+    
+    .confidencial-block__title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $fontColor;
+        line-height: 130%;
+    }
+
+    p{
+        line-height: 140%;
+        color: $subFontColor;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    ul{
+        margin-top: 15px;
+        padding-left: 30px;
+        list-style: none;
+
+        li{
+            line-height: 140%;
+            color: $subFontColor;
+            font-size: 14px;
+        }
+
+        li+li{
+            margin-top: 5px;
+        }
+    }
+
+    .sublist{
+        margin: 0;
+        padding: 0;
+    }
+}

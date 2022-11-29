@@ -1,0 +1,35 @@
+title = "Услуги"
+url = "/services"
+layout = "default"
+==
+
+<main>
+    <div class="box-container">
+        <div class="page-template">
+            <ul class="page-template__breadcrumb">
+                <li><a href="/">Главная</a>&nbsp;»&nbsp;</li>
+                <li class="age-template__breadcrumb-lust">Услуги</li>
+            </ul>
+
+            <h1 class="page-template__title">Услуги</h1>
+
+            <div class="page-template__text page-template__text_margin-min">
+                <p><b>Помимо услуг, доступных во всех похоронных бюро Калуги, в агентстве «Небеса» есть:</b></p>
+
+                <ul class="page-template__text-list">
+                    <li><img src="{{ 'assets/images/icons/common/checked.svg'|theme }}" alt=""><p>собственный морг</p></li>
+                    <li><img src="{{ 'assets/images/icons/common/checked.svg'|theme }}" alt=""><p>вместительный траурный зал для прощаний  </p></li>
+                    <li><img src="{{ 'assets/images/icons/common/checked.svg'|theme }}" alt=""><p>сервис по транспортировке тела усопшего в другие города и страны. </p></li>
+                </ul>
+
+                <p class="page-template__text-margin">«Небеса» - единственное в Калуге бюро ритуальных услуг, где доступен заказ социального такси. Машина привозит родственников умершего в офис компании бесплатно и увозит обратно после решения вопросов по организации похорон.</p>
+            </div>
+
+            {% partial "site/service-links" %}
+
+            {% partial "site/memorial-banner" %}
+
+            {% partial "site/early-ready" %}
+        </div>
+    </div>
+</main>

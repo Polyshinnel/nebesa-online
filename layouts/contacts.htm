@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ 'assets/images/icons/favicon.svg'|theme }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ 'assets/scripts/vendors/owl-carusel/assets/owl.carousel.min.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/scripts/vendors/owl-carusel/assets/owl.theme.default.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
+    <title>{{ this.page.title }}</title>
+    {% styles %}
+</head>
+<body>
+
+    {% partial 'common/header' %}
+
+    {% page %}
+
+    {% partial 'common/footer-sp' %}
+
+
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{ 'assets/scripts/vendors/owl-carusel/owl.carousel.min.js'|theme }}"></script>
+    <script src="{{ 'assets/scripts/common.js'|theme }}"></script>
+    <script src="{{ 'assets/scripts/owl-config.js'|theme }}"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ddda0c18-95d3-493d-820b-a7304bc04e5c" type="text/javascript"></script>
+    <script src="{{ 'assets/scripts/map.js'|theme }}" type="text/javascript"></script>
+    {% framework extras %}
+    {% scripts %}
+</body>
+</html>

@@ -1,0 +1,84 @@
+title = "Контакты"
+url = "/contacts"
+layout = "contacts"
+==
+
+<main>
+    <div class="box-container">
+        <div class="page-template">
+            <ul class="page-template__breadcrumb">
+                <li><a href="/">Главная</a>&nbsp;»&nbsp;</li>
+                <li class="age-template__breadcrumb-lust">Контакты</li>
+            </ul>
+
+            <h1 class="page-template__title">Контакты</h1>
+
+            <div class="contacts-block">
+                <div class="contacts-block__data-form">
+                    <div class="contacts-block__data">
+                        <div class="contacts-block__data-item">
+                            <div class="contacts-block__data-title">
+                                <div class="contacts-block__data-title-img">
+                                    <img src="{{ 'assets/images/icons/contacts/address.svg'|theme }}" alt="">
+                                </div>
+                                <h4>Адрес:</h4>
+                            </div>
+                            <p>Калуга,</p>
+                            <p>ул.Зерновая 17В</p>
+                        </div>
+
+                        <div class="contacts-block__data-item">
+                            <div class="contacts-block__data-title">
+                                <div class="contacts-block__data-title-img">
+                                    <img src="{{ 'assets/images/icons/contacts/phone.svg'|theme }}" alt="">
+                                </div>
+                                <h4>Телефон:</h4>
+                            </div>
+                            <p><a href="tel:88002220200">8 800 222 0200</a></p>
+                            <p>Многоканальный</p>
+                        </div>
+
+                        <div class="contacts-block__data-item">
+                            <div class="contacts-block__data-title">
+                                <div class="contacts-block__data-title-img">
+                                    <img src="{{ 'assets/images/icons/contacts/time.svg'|theme }}" alt="">
+                                </div>
+                                <h4>Режим работы:</h4>
+                            </div>
+                            <p>Круглосуточно</p>
+                        </div>
+
+                        <div class="contacts-block__data-item">
+                            <div class="contacts-block__data-title">
+                                <div class="contacts-block__data-title-img">
+                                    <img src="{{ 'assets/images/icons/contacts/mail.svg'|theme }}" alt="">
+                                </div>
+                                <h4>Эл. почта:</h4>
+                            </div>
+                            <p><a href="mailto:info@nebesa40.ru">info@nebesa40.ru</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts-block__demmiter"></div>
+
+                    <div class="contacts-block__form">
+                        <h4 class="contacts-block__form-title">Обратная связь</h4>
+
+                        <div class="contacts-block__form-block">
+                            <div class="contacts-block__form-line">
+                                <input type="text" placeholder="Ваше имя:">
+                                <input type="text" placeholder="Email:">
+                            </div>
+                            <textarea placeholder="Сообщение:"></textarea>
+                        </div>
+
+                        <div class="contacts-block__form-btn">
+                            <p>Отправить</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-block_map" id="map"></div>
+            </div>
+        </div>
+    </div>
+</main>

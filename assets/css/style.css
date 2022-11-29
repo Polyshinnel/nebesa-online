@@ -2827,4 +2827,36 @@ body {
     width: 100%;
     margin-top: 30px;
   }
+}
+.confidencial-block {
+  margin-top: 20px;
+}
+.confidencial-block .confidencial-block__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 130%;
+}
+.confidencial-block p {
+  line-height: 140%;
+  color: #666666;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.confidencial-block ul {
+  margin-top: 15px;
+  padding-left: 30px;
+  list-style: none;
+}
+.confidencial-block ul li {
+  line-height: 140%;
+  color: #666666;
+  font-size: 14px;
+}
+.confidencial-block ul li + li {
+  margin-top: 5px;
+}
+.confidencial-block .sublist {
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */

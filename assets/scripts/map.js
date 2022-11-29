@@ -1,3 +1,6 @@
+let siteName = window.location.protocol+'//'+window.location.host;
+let imgPath = siteName+'/themes/nebesa/';
+
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [54.54333116126063,36.30253612698363],
@@ -14,7 +17,7 @@ ymaps.ready(function () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: 'assets/images/icons/contacts-pin.svg',
+            iconImageHref: imgPath+'assets/images/icons/contacts-pin.svg',
             // Размеры метки.
             iconImageSize: [65, 76],
         });
