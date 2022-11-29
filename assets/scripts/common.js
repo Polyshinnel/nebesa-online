@@ -1,5 +1,8 @@
+var siteQueryName = window.location.protocol+'//'+window.location.host;
+var imgQueryPath = siteQueryName+'/themes/nebesa/';
+
 function hideMenuElems() {
-    $('.header__mobile-menu img').attr('src','assets/images/icons/mobile/header-menu.svg');
+    $('.header__mobile-menu img').attr('src',imgQueryPath+'assets/images/icons/mobile/header-menu.svg');
     $('.header__mobile-menu-block').slideUp();
     $('.header__mobile-menu-catalog').removeClass('header__mobile-menu-catalog_active');
     $('.header__mobile-menu-catalog-list').css('display','none');
@@ -41,7 +44,7 @@ $(document).mouseup(function(e){
 $('.header__mobile-menu').click(function(){
     var menuState = $('.header__mobile-menu-block').css('display');
     if(menuState == 'none') {
-        $('.header__mobile-menu img').attr('src','assets/images/icons/mobile/header-close.svg');
+        $('.header__mobile-menu img').attr('src',imgQueryPath+'assets/images/icons/mobile/header-close.svg');
         $('.header__mobile-menu-block').slideToggle();
     }
 });
