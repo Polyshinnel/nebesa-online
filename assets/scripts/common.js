@@ -168,3 +168,82 @@ $('.header__top-recall,.main-btn-block__btn_recall,.main-page-organization__bloc
 $('.page-template__banner-btn_taxi').click(function(){
     $('.taxi-recall-block').fadeIn(300);
 })
+
+$.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]"
+$('#recall-phone').mask("+7 (h99) 999-99-99");
+$('#taxi-phone').mask("+7 (h99) 999-99-99");
+$('#user-phone').mask("+7 (h99) 999-99-99");
+
+
+$('.header__bottom-taxi-btn').click(function(){
+    let userName = $('#taxi-name').val();
+    let phone = $('#taxi-phone').val();
+    let addres = $('#taxi-address').val();
+    let typeMsg = 'taxi';
+    
+
+    $.ajax({
+        url: '/themes/nebesa/assets/endpoints/sender.php',
+        method: 'post',
+        dataType: 'html',
+        data: {
+            type_request: typeMsg,
+            user_name: userName,
+            user_phone: phone,
+            addres: addres
+        },
+        success: function(data){
+            $('#taxi-name').val('');
+            $('#taxi-phone').val('');
+            $('#taxi-addres').val('');
+            $('.header__bottom-taxi-menu').slideUp();
+        }
+    });
+});
+
+$('.taxi-recall-block__btn').click(function(){
+    let userName = $('#user-name').val();
+    let phone = $('#user-phone').val();
+    let addres = $('#user-addres').val();
+    let typeMsg = 'taxi';
+
+    $.ajax({
+        url: '/themes/nebesa/assets/endpoints/sender.php',
+        method: 'post',
+        dataType: 'html',
+        data: {
+            type_request: typeMsg,
+            user_name: userName,
+            user_phone: phone,
+            addres: addres
+        },
+        success: function(data){
+            $('#user-name').val('');
+            $('#user-phone').val('');
+            $('#user-addres').val('');
+            $('.taxi-recall-block').fadeOut(300);
+        }
+    });
+});
+
+$('.recall-form__btn').click(function(){
+    let userName = $('#recall-name').val();
+    let phone = $('#recall-phone').val();
+    let typeMsg = 'recall';
+
+    $.ajax({
+        url: '/themes/nebesa/assets/endpoints/sender.php',
+        method: 'post',
+        dataType: 'html',
+        data: {
+            type_request: typeMsg,
+            user_name: userName,
+            user_phone: phone
+        },
+        success: function(data){
+            $('.recall-block').fadeOut(300);
+            $('#recall-name').val('');
+            $('#recall-phone').val('')
+        }
+    });
+});
