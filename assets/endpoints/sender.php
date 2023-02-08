@@ -27,3 +27,4 @@ $telegramApi = $settings['telegramApi'];
 $chatId = $settings['chatId'];
 $telegram = new TelegramClass($telegramApi);
 $telegram->sendMessage($chatId, $message);
+
